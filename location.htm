@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Find Locations | Steve's Intergalactic Cafe</title>
+<title>Locations | Steve's Intergalactic Cafe</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Style&Fonts/steveStyles.css">
-<!--
-
-CID Name Assignment (change the title tag above too!)
-
-What objectives are you demonstrating?
-
--->
 
 <style>
 
-body { background-image: url("Style&Fonts/blueSpace.png"); height: 768px; width: 1024px; display: inline-block;}
+body { background-image: url("Style&Fonts/blueSpace.png");}
 
 #alien1 { font-family: alien1Wizard; color: #ffffff;}
 #alien2 { font-family: alien2Lovecraft; color: #ffffff; }
 #alien3 { font-family: alien3Krypton; color: #ffffff; }
-#redSeven { font-family: RedSeven; color: #ffffff; }
+#english { font-family: RedSeven; color: #ffffff; }
 
 #locationList { min-height: 350px; }
 
@@ -33,8 +26,6 @@ body { background-image: url("Style&Fonts/blueSpace.png"); height: 768px; width:
     text-align: center;
     color: #5ABFFF;
 }
-    
-    
     
 #conInfo {
     color: lightgrey;
@@ -64,6 +55,8 @@ h3 {
 	margin: 15px;
 	margin-bottom: 10px;
 }
+
+#galaxy { color: white; margin-top: 10px; }
 
 #english { font-family: spaceAge; }
 
@@ -126,7 +119,7 @@ function displayLocations() {
 	var message = "";
 	
 	if (document.getElementById("1").selected == true) {
-		message += "<h2>The " + data.one + " Galaxy: </h2>";
+		message += "<h2 id='galaxy'>The " + data.one + " Galaxy: </h2>";
 		message += "<ul style='list-style: none;'>";
 		for (var i in data.milkyWay) {
 			message += "<li id='english' class='list' >" + data.milkyWay[i].location + "</li>";
@@ -138,7 +131,7 @@ function displayLocations() {
 		message += "</ul>";
 	}
 	if (document.getElementById("2").selected == true) {
-		message += "<h2>The " + data.two + " Galaxy: </h2>";
+		message += "<h2 id='galaxy'>The " + data.two + " Galaxy: </h2>";
 		message += "<ul style='list-style: none;'>";
 		for (var i in data.andromeda) {
 			message += "<li id='english' class='list' >" + data.andromeda[i].location + "</li>";
@@ -150,7 +143,7 @@ function displayLocations() {
 		message += "</ul>";
 	}
 	if (document.getElementById("3").selected == true) {
-		message += "<h2>The " + data.three + " Galaxy: </h2>";
+		message += "<h2 id='galaxy'>The " + data.three + " Galaxy: </h2>";
 		message += "<ul style='list-style: none;'>";
 		for (var i in data.cigar) {
 			message += "<li id='english' class='list' >" + data.cigar[i].location + "</li>";
@@ -162,22 +155,26 @@ function displayLocations() {
 		message += "</ul>";
 	}
 	if (document.getElementById("4").selected == true) {
-		message += "<h2>The " + data.four + " Galaxy: </h2>";
+		message += "<h2 id='galaxy'>The " + data.four + " Galaxy: </h2>";
 		message += "<ul style='list-style: none;'>";
 		for (var i in data.tadpole) {
 			message += "<li id='english' class='list' >" + data.tadpole[i].location + "</li>";
 			message += "<li id='alien1' class='list' >" + data.tadpole[i].location + "</li>";
 			message += "<li id='alien2' class='list' >" + data.tadpole[i].location + "</li>";
 			message += "<li id='alien3' class='list' >" + data.tadpole[i].location + "</li>";
-			message += "<br/>";
+			message += "<br/><hr>";
 		}
 		message += "</ul>";
 	}
 	if (document.getElementById("5").selected == true) {
-		message += "<h3>The " + data.five + " Galaxy: </h3>";
+		message += "<h2 id='galaxy'>The " + data.five + " Galaxy: </h2>";
 		message += "<ul style='list-style: none;'>";
 		for (var i in data.whirlpool) {
 			message += "<li id='english' class='list' >" + data.whirlpool[i].location + "</li>";
+			message += "<li id='alien1' class='list' >" + data.whirlpool[i].location + "</li>";
+			message += "<li id='alien2' class='list' >" + data.whirlpool[i].location + "</li>";
+			message += "<li id='alien3' class='list' >" + data.whirlpool[i].location + "</li>";
+			message += "<br/><hr>";
 		}
 		message += "</ul>";
 	}
@@ -193,7 +190,7 @@ function displayLocations() {
 	<img id="ufo2" class="ufo" src="Style&Fonts/ufo2.png" alt="UFO">
 	<section class="header">
 		<h1 id="title">
-		STEVE'S INTERGALICTIC CAFE
+		STEVE'S INTERGALACTIC CAFE
 		</h1>
 		<nav>
 			<ul id="list">

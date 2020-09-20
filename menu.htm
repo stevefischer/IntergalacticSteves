@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MENU | STEVE'S INTERGALACTIC CAFE</title>
+<title>Menu | Steve's Intergalactic Cafe</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -39,7 +39,7 @@
 	
 	.menuItem {
 		float: left; 
-		margin: 10px; 
+		margin: 25px; 
 		width: 150px;
 		height: 250px;
 		overflow-y: auto; /* Not necessary currently, but added in case future additions need it */
@@ -136,25 +136,27 @@
 	<img id="ufo1" class="ufo" src="Style&Fonts/ufo1.png" alt="UFO">
 	<img id="ufo2" class="ufo" src="Style&Fonts/ufo2.png" alt="UFO">
 	<section class="header">
-		<h1 id="title">
-		STEVE'S INTERGALACTIC CAFE
-		</h1>
+		<h1 id="title">STEVE'S INTERGALACTIC CAFE </h1>
 		<nav>
 			<ul id="list">
-				<li class="item"><a href="homePage.htm" class="link">Home</a></li>
+				<li class="item"><a href="index.htm" class="link">Home</a></li>
 				<li class="item"><a href="menu.htm" class="link">Menu</a></li>
-				<li class="item"><a href="locationPage.htm" class="link">Locations</a></li>
-				<li class="item"><a href="contactPage.htm" class="link">Contact</a></li>
+				<li class="item"><a href="location.htm" class="link">Locations</a></li>
+				<li class="item"><a href="contact.htm" class="link">Contact</a></li>
 			</ul>
 		</nav>
 	</section>
 	<br />
+    
+    <h1 id="title">Menu</h1>
 	<form id="menu[]" method="post" action="menu.php">
 		<div id='menuItems'>
 			<p class="alert">
 				It appears that you don't have JavaScript enabled. 
 				Please enable JavaScript or content yourself with some of our more popular items.
 			</p>
+            
+            
 			<div class='menuItem'>
 				<h2> Slurm </h2>
 				<p>It's highly addictive!</p>

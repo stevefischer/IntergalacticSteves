@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact Information Submitted</title>
+<title>Contact Information Submitted | Steve's Intergalactic Cafe</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="Style&Fonts/steveStyles.css">
@@ -25,26 +25,27 @@ What objectives are you demonstrating?
 	
 	h1 {font-family: tron; color: gold;}
     
-    b { font-family: spaceAge; font-size: 2em;}
+    b { font-family: spaceAge; font-size: 1.75em;}
 </style>
 
 </head>
 <body>
 <img id="ufo1" class="ufo" src="Style&Fonts/ufo1.png" alt="UFO">
 <img id="ufo2" class="ufo" src="Style&Fonts/ufo2.png" alt="UFO">
-<section id="header">
-	<h1 id="title">
-	STEVE'S INTERGALACTIC CAFE
-	</h1>
-	<nav>
-		<ul id="list">
-			<li class="item"><a href="homePage.htm" class="link">Home</a></li>
+	<section class="header">
+		<h1 id="title">
+		STEVE'S INTERGALACTIC CAFE
+		</h1>
+		<nav>
+			<ul id="list">
+				<li class="item"><a href="homePage.htm" class="link">Home</a></li>
 				<li class="item"><a href="menu.htm" class="link">Menu</a></li>
 				<li class="item"><a href="locationPage.htm" class="link">Locations</a></li>
 				<li class="item"><a href="contactPage.htm" class="link">Contact</a></li>
-		</ul>
-	</nav>
-</section>
+			</ul>
+		</nav>
+	</section>
+    <section class="header" style="padding-bottom: 15px;">
 <h1>Contact Information Successfully Submitted!</h1>
 <?php
 
@@ -59,8 +60,7 @@ if(isset($_POST['plnt'])) { $plnt = $_POST['plnt']; } else { $plnt = ""; }
 if($fname != "") {
     print "
     <b>Thanks for your submission, $fname $lname!</b>
-    <br /><br>
-    <b>You 
+    <br /><br> 
     <b>Galaxy: $glxy</b>
     <br />
     <b>Solar System: $slrs</b>
@@ -111,6 +111,6 @@ if($fname != "") {
 
 
 ?>
-
+</section>
 </body>
 </html>
