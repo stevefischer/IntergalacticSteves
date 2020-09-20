@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your Order| Steve's Intergalactic Cafe</title>
+<title>Your Order</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!--<link rel="stylesheet" type="text/css" href="steves.css">-->
@@ -88,10 +88,10 @@ What objectives are you demonstrating?
 	</h1>
 	<nav>
 		<ul id="list">
-			<li class="item"><a href="index.htm" class="link">Home</a></li>
+			<li class="item"><a href="homePage.htm" class="link">Home</a></li>
 				<li class="item"><a href="menu.htm" class="link">Menu</a></li>
-				<li class="item"><a href="location.htm" class="link">Locations</a></li>
-				<li class="item"><a href="contact.htm" class="link">Contact</a></li>
+				<li class="item"><a href="locationPage.htm" class="link">Locations</a></li>
+				<li class="item"><a href="contactPage.htm" class="link">Contact</a></li>
 		</ul>
 	</nav>
 </section>
