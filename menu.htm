@@ -22,6 +22,14 @@
 		position: relative;
 		
 	}
+    #conHeader {
+	border-radius: 25px;
+	margin: 3% auto;
+    font-family: RedSeven;
+    font-size: 1em;
+    text-align: center;
+    color: #5ABFFF;
+}
 	
 	#menuItems {
 		width: 85%;
@@ -30,11 +38,13 @@
 	
 	.alert {
 		font-size:1.3em; 
+        text-align: center;
 		color: gold;
 		background: rgba(200,200,200,.5);
 		border-radius: 25px;
 		width: 700px;
-		padding: 5px;
+		margin-left: 15%;
+        margin-right: 15%;
 	}
 	
 	.menuItem {
@@ -66,9 +76,10 @@
 		position: absolute;
 		left: 10px;
 		bottom: 5px;
-		width: calc(100% - 20px);
+        color: white; text-align: center; display: inline-block; background-color: #11469b;
+		
 	}
-	
+
 	#upsy {
 		width: 100%;
 		position: absolute;
@@ -147,8 +158,9 @@
 		</nav>
 	</section>
 	<br />
-    
-    <h1 id="title">Menu</h1>
+    <section class="header">
+        <h2 id="conHeader">--- Contact Us ---</h2>
+        <hr>
 	<form id="menu[]" method="post" action="menu.php">
 		<div id='menuItems'>
 			<p class="alert">
@@ -188,6 +200,7 @@
 			</div>
 		</div>
 	</form>
+    </section>
 
 </body>
 </html>
